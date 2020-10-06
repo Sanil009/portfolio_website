@@ -1,0 +1,99 @@
+/*Style for the body*/
+body{ 
+  background-color:#0A1517;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/*Style for the divisions*/
+.division{background:darkslategray; border-radius: 20px; margin: 15px; padding-top: 2px; padding-left: 3%; padding-right: 3%; padding-bottom: 2px}
+
+/*Style for the unvisited link*/
+a:link {
+  color: rgb(128, 126, 0); 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+/*Style for the visited link*/
+a:visited {
+  color: rgb(25, 146, 80);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*Changes the color of the link on hover */
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/*Style for the link when clikced*/  
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*Style for the top navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+/*Style for the top navigation menu links */
+.topnav a {
+  float: right;
+  display: -moz-box;
+  color: #000000;
+  text-align: center;
+  padding: 35px 40px;
+  text-decoration: underline;
+}
+
+/*Changes the color on hover */
+.topnav a:hover {
+  background-color: darkslategray;
+  border-radius: 2px;
+  color: aliceblue;
+}
+
+/*Style for the side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width*/
+  position: fixed; /*Stays in place */
+  z-index: 1; /* Stays on top */
+  top: 0; /* Stays at the top */
+  left: 0;
+  background-color: #111; /* for the black background color*/
+  overflow-x: hidden; /* for disabling horizontal scroll*/
+  padding-top: 60px; /* to place the content 60px from the top */
+  transition: 0.5s; /* for transition effect of sidenav */
+}
+
+/*Style for the side navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #bbbbbb;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Changes the color on hover */
+.sidenav a:hover {
+  background-color: darkslategray;
+  color: #f1f1f1;
+}
+
+/*Position and style for the close button*/
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Research</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="CSS.css">
+    </head>
+    <style>
+        /* Style for the header */
+        .header {
+            background-color: black;
+            opacity: 1;
+            text-align: center;
+            padding: 1px;
+        }
+
+        /*Style for the footer*/
+        .footer {
+            background-color: transparent;
+            text-align: center;
+            padding-top: 390px; padding-left: 20%; padding-right: 20%; padding-bottom: 5px; 
+        }
+
+        #main {
+            transition: margin-left 0.5s;
+            padding: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 39%;
+        }
+
+        /* for clearing floats after the columns */
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .head{color: white; text-decoration: underline;}
+
+        .paragraph{color:white; font-size: 20px; padding-left: 5px; padding-top:0%;}
+
+
+        a{font-size: 20px}
+    </style>
+
+    <body>
+        <div class="header">
+            <h1 style="color:aliceblue";>Research</h1>
+        </div> 
+
+        <div class="topnav">
+            <img src="../Pictures/Logos.png" alt="Logo" style="float:left; width: 100px; height: 100px; padding-left: 15px;">
+            <a href="Contact.html">Contact</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Research.html">Research</a>
+            <a href="Blog.html">Blog</a>
+            <a href="CV.html">CV</a>
+            <a href="Home page.html">Homepage</a>
+        </div>
+
+        <div id="cvSidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+            <a href="Research.html">Back</a>
+            <a href="Google Drive.html">Google Drive</a>
+            <a href="w3schools.html">w3schools</a>
+            <a href="HCJ.html">HTML CSS JS</a>
+            <a href="Prototypr.html">Prototypr</a>
+            <a href="javatpoint.html">JavaTpoint</a>
+        </div>
+
+        <div id="main">
+            <span style="font-size:30px; color: aliceblue; cursor:pointer" onclick="openNav()">&#9776 More</span>
+
+            <div class="row">
+                <div class="column"; style="padding-top: 10%; padding-left:3%">
+                    <img src="../Research/w3schools.png" style="width:600px; height:350px; padding-bottom: 3%">
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank">Link for the w3schools</a>
+                </div>
+            
+                <div class="column"; style="background:darkslategray; margin-top: 13%; margin-left: 5%; margin-right: 5%; 
+                padding-top:1%; padding-left:3%; padding-right:3%; padding-bottom:3%">
+                    <h2 class="head">w3schools</h2>
+                    <p class="paragraph">
+                        w3schools has been helpful for me in many ways. It is a popular website for language learning and referencing.
+                        There are tutorials and exercises for almost all the programming or scripting languages.
+                        So, this website helped me further more to understand HTML and CSS.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="footer">    
+                <p style="color:rgb(241, 214, 179);">Copyright &copy 2019 Sanil Shrestha</p>
+                
+                <a href="https://www.facebook.com/torres.liverpool09" target="_blank" style="padding-right:15px">
+                    <img src="../Pictures/iconfinder_facebook.png" style="width:20px;height:20px;">
+                </a>
+                
+                <a href="https://instagram.com/sanil_shrestha_?fbclid=IwAR2WCeAdPCcGo7YpEDCEHGoQ0AJkl8MGNHmX5uy5ssog2qdm7kxtuPtfDUU" target="_blank">
+                    <img src="../Pictures/iconfinder_Instagram.png" style="width:20px;height:20px;">
+                </a>
+            </div> 
+        </div>   
+    
+        <script>
+            function openNav() {
+                document.getElementById("cvSidenav").style.width = "245px";
+                document.getElementById("main").style.marginLeft = "245px";
+            }
+        
+            function closeNav() {
+                document.getElementById("cvSidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+    </body>
+</html>
